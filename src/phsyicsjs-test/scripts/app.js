@@ -4,14 +4,14 @@ require([
 
     Physics(function(world){
 
-  var viewWidth = 500;
-  var viewHeight = 300;
+  var viewWidth = window.innerWidth;
+  var viewHeight = window.innerHeight;
 
   var renderer = Physics.renderer('canvas', {
     el: 'viewport',
     width: viewWidth,
     height: viewHeight,
-    meta: false, // don't display meta data
+    meta: true, // don't display meta data
     styles: {
         // set colors for the circle bodies
         'circle' : {
